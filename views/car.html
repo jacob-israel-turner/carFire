@@ -1,0 +1,16 @@
+<div>
+  <ul>
+    <li>Make: {{car.make}}</li>
+    <li>Model: {{car.model}}</li>
+    <li>Year: {{car.year}}</li>
+    <li>Mileage: {{car.mileage}}</li>
+    <li>Price: {{car.price}}</li>
+  </ul>
+  <ul>
+    <li ng-repeat='comment in comments'>{{comment.text}}</li>
+  </ul>
+  <form ng-submit='sendComment()'>
+    <input type='text' ng-model='newComment'>
+    <input type='submit' value='Send'>
+  </form>
+</div>
